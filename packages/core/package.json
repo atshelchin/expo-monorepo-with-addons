@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "@acme/feature-404",
+  "name": "@acme/core",
   "version": "1.0.0",
-  "description": "Acme 404 feature for React (Native)",
+  "description": "Acme core for React (Native)",
   "author": "Cedric van Putten <me@bycedric.com>",
   "license": "MIT",
   "main": "./build/index.js",
@@ -19,7 +19,8 @@
     "build": "tsup --clean"
   },
   "dependencies": {
-    "@acme/ui": "*"
+    "@acme/ui": "*",
+    "solito": "^4.2.0"
   },
   "devDependencies": {
     "@acme/eslint-config": "*",

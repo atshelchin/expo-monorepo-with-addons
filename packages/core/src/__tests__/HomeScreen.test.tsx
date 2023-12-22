@@ -1,6 +1,6 @@
 import { cleanup, render, screen } from '@testing-library/react-native';
 
-import { HomeScreen } from '../HomeScreen';
+import { HomeScreen } from '../features/HomeScreen';
 
 afterEach(cleanup);
 

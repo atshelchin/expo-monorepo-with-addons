@@ -9,7 +9,7 @@ export function NavigationProvider({ children }: { children: React.ReactNode }) 
         () => ({
           prefixes: [Linking.createURL('/')],
           config: {
-            initialRouteName: 'notfound',
+            initialRouteName: 'home',
             screens: {
               home: '',
               notfound: '404',

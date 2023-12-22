@@ -14,8 +14,7 @@
     "eas-build-post-install": "pnpm run -w build:mobile"
   },
   "dependencies": {
-    "@acme/feature-404": "*",
-    "@acme/feature-home": "*",
+    "@acme/core": "*",
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/native-stack": "^6.9.17",
     "@web3modal/wagmi-react-native": "^1.0.1",

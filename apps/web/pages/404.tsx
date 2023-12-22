@@ -1,1 +1,1 @@
-export { NotFoundScreen as default } from '@acme/feature-404';
+export { NotFoundScreen as default } from '@acme/core';

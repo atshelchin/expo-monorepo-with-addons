@@ -1,6 +1,5 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeScreen } from '@acme/feature-home';
-import { NotFoundScreen } from '@acme/feature-404';
+import { HomeScreen, NotFoundScreen } from '@acme/core';
 
 const Stack = createNativeStackNavigator<{
   home: undefined;
