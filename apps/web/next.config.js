@@ -8,6 +8,7 @@ module.exports = {
   swcMinify: true,
   transpilePackages: [
     "solito",
+    "twrnc",
   ],
   webpack: (config) => {
     // Set the alias from `react-native` to `react-native-web`

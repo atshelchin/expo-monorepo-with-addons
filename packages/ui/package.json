@@ -67,5 +67,9 @@
       "react-native",
       "react-native-web"
     ]
+  },
+  "dependencies": {
+    "expo-image": "^1.5.1",
+    "twrnc": "^3.6.7"
   }
 }
