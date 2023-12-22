@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@acme/ui": "*",
+    "react-native-svg": "^13.9.0",
     "solito": "^4.2.0"
   },
   "devDependencies": {

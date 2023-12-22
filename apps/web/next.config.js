@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  // important!!! 
+  // important!!!
   experimental: {
     esmExternals: "loose",
   },
@@ -9,12 +9,25 @@ module.exports = {
   transpilePackages: [
     "solito",
     "twrnc",
+
+    // expo
+    "@expo/html-elements",
+    "expo-modules-core",
+    "expo-image",
+    "expo-asset",
+
+    "react-native-svg",
+    "react-native-svg-web",
   ],
-  webpack: (config) => {
+  webpack: (config, { dev, webpack }) => {
     // Set the alias from `react-native` to `react-native-web`
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
+      // https://github.com/necolas/react-native-web/issues/2499
+      "react-native/Libraries/Image/AssetRegistry$":
+        "react-native-web/dist/modules/AssetRegistry",
       "react-native": "react-native-web",
+      "react-native-svg$": "react-native-svg-web",
     };
 
     // Add custom `.web.{jsx?,tsx?}` extension resolver
@@ -25,6 +38,12 @@ module.exports = {
       ".web.tsx",
       ...config.resolve.extensions,
     ];
+
+    config.plugins.push(
+      new webpack.DefinePlugin({
+        "__DEV__": dev.toString(),
+      }),
+    );
 
     return config;
   },

@@ -1,12 +1,45 @@
-import { Paragraph, View } from '@acme/ui';
+import { Paragraph, View, Image } from '@acme/ui';
 import { ComponentProps } from 'react';
 import { TextLink } from 'solito/link';
 
 type HomeScreenProps = ComponentProps<typeof Paragraph>;
 
+const blurhash =
+  '|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[';
+
 export const HomeScreen = (props: HomeScreenProps) => (
   <View tw="bg-red-200">
-    <Paragraph {...props}>Hello from an Expo monorepo!</Paragraph>
+    <Image
+      tw="h-12 w-12 flex-none rounded-full bg-green-50"
+      source={{
+        uri: 'https://psc2.cf2.poecdn.net/8b8a7e1ecc52c932a7ea1e85c5e599b5667d5dc8/_next/static/media/openAIBlue.915c0399.png',
+      }}
+      alt=""
+    />
+
+    <Image
+      tw="h-12 w-12 flex-none rounded-full bg-green-50"
+      source="https://picsum.photos/seed/696/3000/2000"
+      placeholder={blurhash}
+      contentFit="cover"
+      transition={1000}
+    />
+
+    <Image
+      tw="h-12 w-12 flex-none rounded-full bg-green-50"
+      contentFit="cover"
+      style={{
+        width: 50,
+        height: 50,
+      }}
+      tw="flex-none rounded-full bg-green-50"
+      source={{
+        uri: 'https://cdn.jsdelivr.net/gh/shelchin2023/binance-icons/crypto/sand.svg',
+      }}
+      alt=""
+    />
+
+    <Paragraph {...props}>Hello Expo</Paragraph>
     <TextLink href="/404"> Go to 404</TextLink>
   </View>
 );
