@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "myapp",
     "name": "expo-monorepo",
     "slug": "expo-monorepo",
     "version": "1.0.0",
@@ -17,12 +18,12 @@
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "com.bycedric.expomonorepo",
+      "bundleIdentifier": "com.myapp",
       "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
-      "package": "com.bycedric.expomonorepo",
+      "package": "com.myapp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"

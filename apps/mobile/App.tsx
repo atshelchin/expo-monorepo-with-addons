@@ -1,22 +1,14 @@
-import { HomeIcon, HomeScreen } from '@acme/feature-home';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import { SafeAreaView, StatusBar } from 'react-native';
+import { Provider } from './provider';
+import { NativeNavigation } from './navigation';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <HomeIcon style={{ fontSize: 64 }} />
-      <HomeScreen />
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <StatusBar />
+      <Provider>
+        <NativeNavigation />
+      </Provider>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
