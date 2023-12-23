@@ -2,12 +2,10 @@ import { Paragraph, View, Image } from '@acme/ui';
 import { ComponentProps } from 'react';
 import { TextLink } from 'solito/link';
 
-type HomeScreenProps = ComponentProps<typeof Paragraph>;
-
 const blurhash =
   '|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[';
 
-export const HomeScreen = (props: HomeScreenProps) => (
+export const HomeScreen = () => (
   <View tw="bg-red-200">
     <Image
       tw="h-12 w-12 flex-none rounded-full bg-green-50"
@@ -26,20 +24,17 @@ export const HomeScreen = (props: HomeScreenProps) => (
     />
 
     <Image
-      tw="h-12 w-12 flex-none rounded-full bg-green-50"
+      tw="h-12 w-12 flex-none rou2nded-full bg-green-50"
       contentFit="cover"
-      style={{
-        width: 50,
-        height: 50,
-      }}
-      tw="flex-none rounded-full bg-green-50"
       source={{
+        width: 150,
+        height: 150,
         uri: 'https://cdn.jsdelivr.net/gh/shelchin2023/binance-icons/crypto/sand.svg',
       }}
       alt=""
     />
 
-    <Paragraph {...props}>Hello Expo</Paragraph>
+    <Paragraph>Hello Expo</Paragraph>
     <TextLink href="/404"> Go to 404</TextLink>
   </View>
 );

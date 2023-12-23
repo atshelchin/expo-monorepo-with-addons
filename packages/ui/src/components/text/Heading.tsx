@@ -6,6 +6,7 @@ import { Text } from '../../elements/Text';
 export type HeadingProps = {
   injClass?: string;
   level?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+  children:string
 };
 
 // Font size color weight

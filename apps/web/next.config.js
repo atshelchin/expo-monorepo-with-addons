@@ -7,6 +7,8 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   transpilePackages: [
+    "react-native",
+    "react-native-web",
     "solito",
     "twrnc",
 
