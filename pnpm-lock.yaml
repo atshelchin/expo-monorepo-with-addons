@@ -28,7 +28,7 @@ importers:
         version: 6.9.17(@react-navigation/native@6.1.9)(react-native-safe-area-context@4.8.2)(react-native-screens@3.29.0)(react-native@0.72.4)(react@18.2.0)
       '@web3modal/wagmi-react-native':
         specifier: ^1.0.1
-        version: 1.0.1(@react-native-async-storage/async-storage@1.21.0)(@react-native-community/netinfo@11.2.1)(@walletconnect/react-native-compat@2.11.0)(react-native-get-random-values@1.10.0)(react-native-modal@13.0.1)(react-native-svg@13.9.0)(react-native@0.72.4)(react@18.2.0)(viem@1.20.3)(wagmi@1.4.12)
+        version: 1.0.1(@react-native-async-storage/async-storage@1.21.0)(@react-native-community/netinfo@11.2.1)(@walletconnect/react-native-compat@2.11.0)(react-native-get-random-values@1.10.0)(react-native-modal@13.0.1)(react-native-svg@13.10.0)(react-native@0.72.4)(react@18.2.0)(viem@1.20.3)(wagmi@1.4.12)
       expo:
         specifier: ^49.0.10
         version: 49.0.10(@babel/core@7.20.2)
@@ -68,6 +68,9 @@ importers:
       react-native-screens:
         specifier: ^3.29.0
         version: 3.29.0(react-native@0.72.4)(react@18.2.0)
+      react-native-svg:
+        specifier: 13.10.0
+        version: 13.10.0(react-native@0.72.4)(react@18.2.0)
       react-native-web:
         specifier: ~0.19.6
         version: 0.19.6(react-dom@18.2.0)(react@18.2.0)
@@ -134,8 +137,8 @@ importers:
         specifier: '*'
         version: link:../ui
       react-native-svg:
-        specifier: ^13.9.0
-        version: 13.9.0(react-native@0.72.1)(react@18.2.0)
+        specifier: ^13.10.0
+        version: 13.10.0(react-native@0.72.1)(react@18.2.0)
       react-native-web:
         specifier: '*'
         version: 0.19.6(react-dom@18.2.0)(react@18.2.0)
@@ -5122,7 +5125,7 @@ packages:
       valtio: 1.10.5(react@18.2.0)
     dev: false
 
-  /@web3modal/scaffold-react-native@1.0.1(@react-native-async-storage/async-storage@1.21.0)(@walletconnect/react-native-compat@2.11.0)(react-native-modal@13.0.1)(react-native-svg@13.9.0)(react-native@0.72.4)(react@18.2.0):
+  /@web3modal/scaffold-react-native@1.0.1(@react-native-async-storage/async-storage@1.21.0)(@walletconnect/react-native-compat@2.11.0)(react-native-modal@13.0.1)(react-native-svg@13.10.0)(react-native@0.72.4)(react@18.2.0):
     resolution: {integrity: sha512-7+u3uCwsp1UsRajabWTaEzLiPB1vQXGO5bqGhRK+cn0wY+8w4TQD9Tq6nzdZ8XSWA61U51ocdpfFGVxXxFj1sA==}
     peerDependencies:
       react: '>=17'
@@ -5130,7 +5133,7 @@ packages:
       react-native-modal: '>=13'
     dependencies:
       '@web3modal/core-react-native': 1.0.1(@react-native-async-storage/async-storage@1.21.0)(@walletconnect/react-native-compat@2.11.0)(react-native@0.72.4)(react@18.2.0)
-      '@web3modal/ui-react-native': 1.0.1(react-native-svg@13.9.0)(react-native@0.72.4)(react@18.2.0)
+      '@web3modal/ui-react-native': 1.0.1(react-native-svg@13.10.0)(react-native@0.72.4)(react@18.2.0)
       react: 18.2.0
       react-native: 0.72.4(@babel/core@7.20.2)(react@18.2.0)
       react-native-modal: 13.0.1(react-native@0.72.4)(react@18.2.0)
@@ -5140,7 +5143,7 @@ packages:
       - react-native-svg
     dev: false
 
-  /@web3modal/ui-react-native@1.0.1(react-native-svg@13.9.0)(react-native@0.72.4)(react@18.2.0):
+  /@web3modal/ui-react-native@1.0.1(react-native-svg@13.10.0)(react-native@0.72.4)(react@18.2.0):
     resolution: {integrity: sha512-LFNa2vhr1CKAGysRv2kgXshr1FbZs7ltbU5KQv1lMV0iah/OVassFk+jUW4qfEEBlzETO14Fam5LXK4/m+0y/w==}
     peerDependencies:
       react: '>=17'
@@ -5150,10 +5153,10 @@ packages:
       qrcode: 1.5.3
       react: 18.2.0
       react-native: 0.72.4(@babel/core@7.20.2)(react@18.2.0)
-      react-native-svg: 13.9.0(react-native@0.72.4)(react@18.2.0)
+      react-native-svg: 13.10.0(react-native@0.72.4)(react@18.2.0)
     dev: false
 
-  /@web3modal/wagmi-react-native@1.0.1(@react-native-async-storage/async-storage@1.21.0)(@react-native-community/netinfo@11.2.1)(@walletconnect/react-native-compat@2.11.0)(react-native-get-random-values@1.10.0)(react-native-modal@13.0.1)(react-native-svg@13.9.0)(react-native@0.72.4)(react@18.2.0)(viem@1.20.3)(wagmi@1.4.12):
+  /@web3modal/wagmi-react-native@1.0.1(@react-native-async-storage/async-storage@1.21.0)(@react-native-community/netinfo@11.2.1)(@walletconnect/react-native-compat@2.11.0)(react-native-get-random-values@1.10.0)(react-native-modal@13.0.1)(react-native-svg@13.10.0)(react-native@0.72.4)(react@18.2.0)(viem@1.20.3)(wagmi@1.4.12):
     resolution: {integrity: sha512-wrY4oHMwkKohiB7p5daCFng+3b0yfh+y6MrVdo8pS0ZkZJty34XpNu1lTq8F/l3Hxwh8HjrVC/SMVEDEh4r4Uw==}
     peerDependencies:
       '@react-native-async-storage/async-storage': '>=1.17.0'
@@ -5166,7 +5169,7 @@ packages:
     dependencies:
       '@react-native-async-storage/async-storage': 1.21.0(react-native@0.72.4)
       '@react-native-community/netinfo': 11.2.1(react-native@0.72.4)
-      '@web3modal/scaffold-react-native': 1.0.1(@react-native-async-storage/async-storage@1.21.0)(@walletconnect/react-native-compat@2.11.0)(react-native-modal@13.0.1)(react-native-svg@13.9.0)(react-native@0.72.4)(react@18.2.0)
+      '@web3modal/scaffold-react-native': 1.0.1(@react-native-async-storage/async-storage@1.21.0)(@walletconnect/react-native-compat@2.11.0)(react-native-modal@13.0.1)(react-native-svg@13.10.0)(react-native@0.72.4)(react@18.2.0)
       react: 18.2.0
       react-native: 0.72.4(@babel/core@7.20.2)(react@18.2.0)
       react-native-get-random-values: 1.10.0(react-native@0.72.4)
@@ -12326,8 +12329,8 @@ packages:
       react-native-web: 0.19.6(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
-  /react-native-svg@13.9.0(react-native@0.72.1)(react@18.2.0):
-    resolution: {integrity: sha512-Ey18POH0dA0ob/QiwCBVrxIiwflhYuw0P0hBlOHeY4J5cdbs8ngdKHeWC/Kt9+ryP6fNoEQ1PUgPYw2Bs/rp5Q==}
+  /react-native-svg@13.10.0(react-native@0.72.1)(react@18.2.0):
+    resolution: {integrity: sha512-D/oYTmUi5nsA/2Nw4WYlF1UUi3vZqhpESpiEhpYCIFB/EMd6vz4A/uq3tIzZFcfa5z2oAdGSxRU1TaYr8IcPlQ==}
     peerDependencies:
       react: '*'
       react-native: '*'
@@ -12338,8 +12341,8 @@ packages:
       react-native: 0.72.1(react@18.2.0)
     dev: false
 
-  /react-native-svg@13.9.0(react-native@0.72.4)(react@18.2.0):
-    resolution: {integrity: sha512-Ey18POH0dA0ob/QiwCBVrxIiwflhYuw0P0hBlOHeY4J5cdbs8ngdKHeWC/Kt9+ryP6fNoEQ1PUgPYw2Bs/rp5Q==}
+  /react-native-svg@13.10.0(react-native@0.72.4)(react@18.2.0):
+    resolution: {integrity: sha512-D/oYTmUi5nsA/2Nw4WYlF1UUi3vZqhpESpiEhpYCIFB/EMd6vz4A/uq3tIzZFcfa5z2oAdGSxRU1TaYr8IcPlQ==}
     peerDependencies:
       react: '*'
       react-native: '*'
