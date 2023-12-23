@@ -4,6 +4,9 @@ module.exports = {
   experimental: {
     esmExternals: "loose",
   },
+  output: "export",
+  distDir:'out',
+  basePath: "/expo-monorepo-with-addons",
   reactStrictMode: true,
   swcMinify: true,
   transpilePackages: [
@@ -21,7 +24,7 @@ module.exports = {
     "react-native-svg",
     "react-native-svg-web",
 
-    "@ui-kitten/components"
+    "@ui-kitten/components",
   ],
   webpack: (config, { dev, webpack }) => {
     // Set the alias from `react-native` to `react-native-web`
