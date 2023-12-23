@@ -20,6 +20,8 @@ module.exports = {
 
     "react-native-svg",
     "react-native-svg-web",
+
+    "@ui-kitten/components"
   ],
   webpack: (config, { dev, webpack }) => {
     // Set the alias from `react-native` to `react-native-web`

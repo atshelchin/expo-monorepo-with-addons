@@ -20,6 +20,8 @@
   },
   "dependencies": {
     "@acme/ui": "*",
+    "@eva-design/eva": "^2.2.0",
+    "@ui-kitten/components": "^5.3.1",
     "react-native-svg": "^13.10.0",
     "solito": "^4.2.0"
   },
